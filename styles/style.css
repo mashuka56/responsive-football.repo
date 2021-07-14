@@ -1,128 +1,151 @@
 body{
-    margin: 0;
-    padding:0;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
 }
 /*-----------------
- intro section style
- ------------------ */
- .intro{
-    
-     height: 570px;
-     background-color: #2D25A0;
-     margin-bottom: 50px;
-     display: flex;
-     justify-content: space-between; 
-    
- }
- .container{
-    width: 1080px;
-    margin:0 auto;
-    
- }
-  .top-section{
-      margin-top: 10px;
-      margin-right: 5px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     align-content: center;
- } 
- .title{
-     font-size: 34px;
-     color: white;
-     /* margin: 73px; */
-     /* line-height: 73px; */
-     /* padding-left: 33px; */
-     /* padding-top:20px ; */
+intro section style
+------------------ */
+.intro{
+  
+   height: 570px;
+   background-color: #2D25A0;
+   margin-bottom: 50px;
+   display: flex;
+   justify-content: space-between; 
+  
+}
+.container{ 
+  width: 100%;
+  margin:0 auto; 
+  /* margin-top: 10px; */
+  /* margin-right: 5px; */
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ align-content: center;
+   
+}
+ .top-section{
+    /* margin-top: 10px;
+    margin-right: 5px; */
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+}  
+.title{
+   font-size: 34px;
+   color: white;
+   /* margin: 73px; */
+   /* line-height: 73px; */
+   /* padding-left: 33px; */
+   /* padding-top:20px ; */
 
- }
- .button{
-     /* position: absolute; */
-     /* width: 485px; */
-     /* height: 230px; */
-    padding-top: 10px ;
-    /*  padding-right:25px ; */
- }
- .button a,i{
-     color: white;
-    text-decoration: none;
-    font-size: 16px;
-    background-color: #E02C6D;
-    padding: 10px;
-    padding-right: 20px;
-    
-    
-  } 
- /* main section */
- 
- 
- .players{
-   display: grid;
-   grid-template-columns: 330px 330px 330px;
-   grid-row-gap: 27px;
-   grid-column-gap: 30px;
-   justify-content: center;
+}
+.button{
+   /* position: absolute; */
+   /* width: 485px; */
+   /* height: 230px; */
+  padding-top: 10px ;
+  /*  padding-right:25px ; */
+}
+.button a,i{
+   color: white;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: #E02C6D;
+  padding: 10px;
+  padding-right: 20px;
+  
+  
+} 
 
- }
- .player{
-    width: 330px;
-    height: 474px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
- .player img{
-     width: 300px;
-     height: 256px;
- }
- .details h1{
-    margin-top: 16px;
-    margin-bottom: -6px;
-     
+.man img{
+    width: 560px;
+}
+/* main section */
+
+
+.players{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-row-gap: 25px;
+ grid-column-gap: 25px;
+ justify-content: center;
+ width: 1080px;
+ align-items: center;
+ margin: auto;
+}
+.player{
+  width: 330px;
+  height: 474px;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.player .inside {
+  width: 100%;
+  overflow: hidden;
+}
+.player img{
+   width: 100%;
+   height: auto;
+}
+.details h1{
+  margin-top: 16px;
+  margin-bottom: -6px;
+   
 }
 
 /* footer */
 .footer {
-    margin-top: 200px;
+  margin-top: 200px;
+}
+.footer img {
+  width: 260px;
+  display: block;
+  margin: 0 auto;
+}
+ margin: 20px;
+  margin-left: 64px;
+}
+.fa-twitter,
+.fa-youtube,
+.fa-instagram,
+.fa-futbol {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #aaa;
+}
+#copyrigth {
+  text-align: center;
+}
+  .footer div {
+  text-align: center;
+  margin: 20px;
+  margin-left: 64px;
+}
+.fa-twitter,
+.fa-youtube,
+.fa-instagram,
+.fa-futbol {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #aaa;
+}
+#copyrigth {
+  text-align: center;
+}
+/*--- @media --- */
+@media only screen and (max-width: 480px){
+
+  .player{
+    background-color: red;
   }
-  .footer img {
-    width: 260px;
-    display: block;
-    margin: 0 auto;
-  }
-   margin: 20px;
-    margin-left: 64px;
-  }
-  .fa-twitter,
-  .fa-youtube,
-  .fa-instagram,
-  .fa-futbol {
-    padding: 10px;
-    border-radius: 50px;
-    background-color: #aaa;
-  }
-  #copyrigth {
-    text-align: center;
-  }
-    .footer div {
-    text-align: center;
-    margin: 20px;
-    margin-left: 64px;
-  }
-  .fa-twitter,
-  .fa-youtube,
-  .fa-instagram,
-  .fa-futbol {
-    padding: 10px;
-    border-radius: 50px;
-    background-color: #aaa;
-  }
-  #copyrigth {
-    text-align: center;
-  }
-  
-  
+
+}
